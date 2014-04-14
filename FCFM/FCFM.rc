@@ -1,0 +1,373 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\FCFM.rc2""  // ·? Microsoft Visual C++ ±à?-μ?×ê?′\r\n"
+    "#include ""l.CHS\\afxres.rc""      // ±ê×?×é?t\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\FCFM.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 共聚焦显微内窥镜"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "共聚焦显微内窥镜，1.2 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2012",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_FCFM_DIALOG DIALOGEX 0, 0, 438, 355
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "共聚焦显微内窥镜"
+MENU IDR_MENU1
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,355,317,50,14
+    PUSHBUTTON      "取消",IDCANCEL,355,334,50,14
+    GROUPBOX        "控制命令",IDC_STATIC,355,147,76,55
+    GROUPBOX        "连续截图",IDC_STATIC,355,206,76,35
+    LTEXT           "IP",IDC_STATIC,358,22,8,8
+    LTEXT           "端口",IDC_STATIC,358,40,15,8
+    GROUPBOX        "本机信息",IDC_STATIC,356,7,75,51
+    EDITTEXT        IDC_EDIT_PCIP,373,21,53,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_PCPORT,373,39,51,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "开始采集",IDC_BUTTON_START,358,160,50,14
+    PUSHBUTTON      "单张截图",IDC_BUTTON_SHOT,358,180,50,14
+    PUSHBUTTON      "开始截图",IDC_BUTTON_CONTISTART,358,219,50,14
+    CONTROL         "",IDC_STATIC_BMP1,"Static",SS_BITMAP,7,7,13,12
+    CONTROL         "",IDC_STATIC_BMP2,"Static",SS_BITMAP,411,218,13,12
+    GROUPBOX        "图像显示分辨率",IDC_STATIC,355,61,76,40
+    CONTROL         "1024 x 1024",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,362,73,56,10
+    CONTROL         "512 x 512",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,362,86,54,10
+    PUSHBUTTON      "打开激光器",IDC_BUTTON_0xff,358,254,50,14
+    CONTROL         "",IDC_MSCOMM2,"{648A5600-2C6E-101B-82B6-000000000014}",WS_TABSTOP,358,296,22,22
+    PUSHBUTTON      "设置",IDC_BUTTON_PWR,358,276,28,14
+    EDITTEXT        IDC_EDIT_PWR,388,276,21,14,ES_AUTOHSCROLL
+    LTEXT           "mW",IDC_STATIC,411,278,14,8
+    CONTROL         "",IDC_STATIC_bmp4,"Static",SS_BITMAP,297,285,13,12
+    CONTROL         "",IDC_STATIC_LASER,"Static",SS_BITMAP,411,255,13,12
+    GROUPBOX        "共聚焦探头",IDC_STATIC,355,104,76,40
+    CONTROL         "U-240",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON | WS_GROUP,363,117,35,10
+    CONTROL         "S-500",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,363,129,34,10
+    CONTROL         "",IDC_STATIC_bmp5,"Static",SS_BITMAP,35,277,13,12
+END
+
+IDD_DIALOG_LASERCTRL DIALOGEX 0, 0, 286, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置激光器"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "设定",IDC_BUTTON_SETPWR,85,34,50,14
+    LTEXT           "设置功率",IDC_STATIC,8,37,33,8
+    CONTROL         "",IDC_MSCOMM1,"{648A5600-2C6E-101B-82B6-000000000014}",WS_TABSTOP,254,7,25,23
+    CONTROL         "",IDC_SLIDER_PWR,"msctls_trackbar32",TBS_AUTOTICKS | TBS_BOTH | TBS_ENABLESELRANGE | NOT WS_VISIBLE,7,14,272,24
+    EDITTEXT        IDC_EDIT_PWR,40,34,23,14,ES_AUTOHSCROLL
+    LTEXT           "毫瓦",IDC_STATIC,64,36,17,8
+    COMBOBOX        IDC_COMBO_COM,123,14,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "设定前先选择激光器所在COM口",IDC_STATIC,8,16,112,8
+    LTEXT           "0.1",IDC_STATIC,9,7,12,8,NOT WS_VISIBLE
+    LTEXT           "7",IDC_STATIC,267,7,8,8,NOT WS_VISIBLE
+    LTEXT           "6",IDC_STATIC,231,7,8,8,NOT WS_VISIBLE
+    LTEXT           "1",IDC_STATIC,49,7,8,8,NOT WS_VISIBLE
+    LTEXT           "2",IDC_STATIC,85,7,8,8,NOT WS_VISIBLE
+    LTEXT           "3",IDC_STATIC,121,7,8,8,NOT WS_VISIBLE
+    LTEXT           "4",IDC_STATIC,157,7,8,8,NOT WS_VISIBLE
+    LTEXT           "5",IDC_STATIC,194,7,8,8,NOT WS_VISIBLE
+    PUSHBUTTON      "打开激光器",IDC_BUTTON_TURNONOFF,188,13,50,14
+    PUSHBUTTON      "关闭激光器",IDC_BUTTON_TURNONOFF2,188,33,50,14
+END
+
+IDD_DIALOG_LINE DIALOGEX 0, 0, 218, 161
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "图像增强"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,5,91,35,14
+    PUSHBUTTON      "Cancel",IDCANCEL,5,111,35,14
+    PUSHBUTTON      "设置",IDC_BUTTON_LINE,5,71,35,14
+    LTEXT           "A=",IDC_STATIC,7,9,11,8
+    LTEXT           "B=",IDC_STATIC,7,24,10,8
+    LTEXT           "C=",IDC_STATIC,7,39,11,8
+    LTEXT           "D=",IDC_STATIC,7,54,11,8
+    EDITTEXT        IDC_EDIT1,18,7,22,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT2,18,22,22,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT3,18,37,22,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT4,18,52,22,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_STATIC_LINE,"Static",SS_BITMAP,46,7,15,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "FCFM.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "FCFM.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_FCFM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 431
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 348
+    END
+
+    IDD_DIALOG_LASERCTRL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 279
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DIALOG_LINE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 211
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 154
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP "文件"
+    BEGIN
+        MENUITEM "打开",                          ID_OPEN
+        MENUITEM "退出",                          ID_EXIT
+    END
+    POPUP "设置"
+    BEGIN
+        MENUITEM "截图保存路径",                      ID_SHOTPATH
+        MENUITEM "激光器设置",                       ID_LASERCTRL
+        MENUITEM "图像增强",                        ID_LINE
+    END
+    POPUP "帮助"
+    BEGIN
+        MENUITEM "关于",                          ID_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_LASERCTRL DLGINIT
+BEGIN
+    IDC_MSCOMM1, 0x376, 102, 0
+0x0013, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0031, 0x0039, 
+0x0039, 0x0034, 0x0020, 0x4321, 0x1234, 0x0008, 0x0000, 0x03ed, 0x0000, 
+0x03ed, 0x0000, 0x5601, 0x648a, 0x0000, 0x0006, 0x0000, 0x0003, 0x0400, 
+0x0000, 0x0200, 0x0000, 0x2580, 0x0000, 0x0000, 0x0008, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x003f, 0x0000, 0x0011, 0x0000, 
+    0
+END
+
+IDD_FCFM_DIALOG DLGINIT
+BEGIN
+    IDC_MSCOMM2, 0x376, 102, 0
+0x0013, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0031, 0x0039, 
+0x0039, 0x0034, 0x0020, 0x4321, 0x1234, 0x0008, 0x0000, 0x03ed, 0x0000, 
+0x03ed, 0x0000, 0x5601, 0x648a, 0x0000, 0x0006, 0x0000, 0x0001, 0x0400, 
+0x0000, 0x0200, 0x0000, 0x2580, 0x0000, 0x0000, 0x0008, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x003f, 0x0000, 0x0001, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "res\\green.bmp"
+IDB_BITMAP2             BITMAP                  "res\\1.bmp"
+IDB_BITMAP3             BITMAP                  "res\\biaochi.bmp"
+IDB_BITMAP4             BITMAP                  "res\\laser.bmp"
+IDB_BITMAP5             BITMAP                  "res\\biaochi2.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR1 ACCELERATORS 
+BEGIN
+    VK_F5,          IDC_BUTTON_0xff,        VIRTKEY, NOINVERT
+    VK_F7,          IDC_BUTTON_START,       VIRTKEY, NOINVERT
+    VK_F6,          IDC_BUTTON_SHOT,        VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 FCFM(&A)..."
+    IDS_TIME                "time"
+    IDP_SOCKETS_INIT_FAILED "Windows 套接字初始化失败。"
+    IDS_FPS                 "fps"
+    IDS_RES                 "res"
+    IDS_MESSAGE             "message"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\FCFM.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
